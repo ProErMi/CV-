@@ -1,0 +1,199 @@
+*{
+    font-family: "montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #acb0b4;
+}
+.container{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.33fr 1fr;
+    width: 210mm;
+    height: 297mm;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.container .card-one{
+    padding: 40px 20px;
+    padding-left: 35px;
+    background-color: #d1d1d1;
+    width: 100%;
+    color: #313131;
+}
+.container .card-one .profile{
+    display: inline-flex;
+    margin-bottom: 5px;
+    margin-left: -15px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 3px solid #2c2b29;
+    background-image: url("foto pribadi.jpeg");
+    background-position: center top;
+    background-size: 100%;
+}
+.container .card-one .contact-box{
+    margin-top: 10px;
+}
+.container .card-one .contact-box>*{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    margin-top: 25px;
+    align-items: center;
+}
+.container .card-one .contact-box>* .text{
+    display: inline-flex;
+    word-break: break-all;
+}
+.container .card-one .personal-box{
+    margin-top: 30px;
+}
+.container .card-one .personal-box p{
+    padding: 5px;
+}
+.container .card-one .personal-box .dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #313131;
+    border-radius: 50%;
+    margin-left: 4px;
+}
+.container .card-one .personal-box .dot.active{
+    background-color: #b89258;
+}
+.container .card-one .hobbies-box{
+    margin-top: 30px;
+}
+.container .card-one .hobbies-box .logo{
+    margin: 10px 0px;
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr;
+    font-size: 2em;
+    row-gap: 15px;
+}
+.container .card-one .social-box{
+    margin-top: 30px;
+}
+.container .card-one .social-box i{
+    font-size: 1.3em;
+}
+.container .card-one .social-box>*{
+    width: 100%;
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: 0.2fr 1fr;
+    align-items: center;
+}
+.container .card-one .social-box>* .text{
+    display: inline-flex;
+    word-break: break-all;
+}
+.container .card-one .social-box .text a{
+    text-decoration: none;
+    color: #313131;
+}
+.container .card-two{
+    background-color:  #173c62;
+    padding: 40px 20px;
+    padding-right: 75px;
+    color: #b5b5b4;
+}
+.container .card-two .title{
+    font-size: 2em;
+    font-weight: 400;
+    color: #b89258;
+}
+.container .card-two .box{
+    display: inline-block;
+    padding: 2px 70px 2px 20px;
+    margin-left: -20px;
+    margin-top: 35px;
+    background-color: #b89258;
+    color: #2c2b29;
+}
+.container .card-two .group-1 .description{
+    margin-top: 15px;
+    line-height: 1.5;
+    text-align: justify;
+}
+.container .card-two .group-2 .description{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.container .card-two .group-2 .description ul{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.container .card-two .group-2 .description ul::before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -22px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #b89258;
+}
+.container .card-two .group-2 .description ul li{
+    list-style-type: none;
+    position: relative;
+}
+.container .card-two .group-2 .description ul li::before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -18px;
+    height: 60px;
+    border-left: 2px solid #b89258;
+}
+.container .card-two .group-2 .description ul:last-of-type li::before{
+    content: none;
+}
+.container .card-two .group-2 .description ul li div:last-of-type{
+    color: #b89258;
+    font-weight: bold;
+}
+.container .card-two .group-3 .description{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.container .card-two .group-3 .description ul{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.container .card-two .group-3 .description ul::before{
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: -22px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #b89258;
+}
+.container .card-two .group-3 .description ul li{
+    list-style-type: none;
+    position: relative;
+}
+.container .card-two .group-3 .description ul li::before{
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: -18px;
+    height: 110px;
+    border-left: 2px solid #b89258;
+}
+.container .card-two .group-3 .description ul li div:nth-child(2){
+    font-weight: bold;
+    color: #b89258;
+}
+.container .card-two .group-3 .description ul:last-of-type li::before{
+    content: none;
+}
